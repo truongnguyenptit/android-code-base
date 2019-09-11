@@ -1,0 +1,20 @@
+apply plugin: 'kotlin-kapt'
+apply from: '../../android_feature_dependencies.gradle'
+apply plugin: "androidx.navigation.safeargs.kotlin"
+
+android {
+    defaultConfig {
+        testInstrumentationRunner "io.philippeboisney.common_test.FakeRunner"
+    }
+    dataBinding {
+        enabled true
+    }
+    testOptions {
+        animationsDisabled = true
+    }
+}
+
+dependencies {
+    // GLIDE
+    implementation Libraries.glide
+}

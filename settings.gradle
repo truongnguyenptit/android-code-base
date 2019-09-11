@@ -1,0 +1,14 @@
+include ':app',
+        ':features',
+        ':features:home',
+        ':features:detail',
+        ':buildSrc',
+        ':data',
+        ':common',
+        ':navigation',
+        ':common_test',
+        ':data:remote',
+        ':data:model',
+        ':data:local',
+        ':data:repository'
+rootProject.name='AndroidBaseProject'
